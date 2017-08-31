@@ -14,7 +14,7 @@ Run `$ gulp --watch` and load the `dist`-directory into chrome.
 
 There are two kinds of entryfiles that create bundles.
 
-1. All js-files in the root of the `./app/scripts` directory
+1. All ts-files in the root of the `./app/scripts` directory
 2. All css-,scss- and less-files in the root of the `./app/styles` directory
 
 ## Tasks
@@ -61,9 +61,9 @@ or
 The build tool also defines a variable named `process.env.NODE_ENV` in your scripts. It will be set to `development` unless you use the `--production` option.
 
 
-**Example:** `./app/background.js`
+**Example:** `./app/background.ts`
 
-```javascript
+```typescript
 if(process.env.NODE_ENV === 'development'){
   console.log('We are in development mode!');
 }

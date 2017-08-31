@@ -10,9 +10,9 @@
     ├──── pages                 # HTML files (Glob: `/*.html`)
     ├────── popup.html
     ├────── example.html
-    ├──── scripts               # JS (ES2015) files (Glob: `/*.js`)
-    ├────── background.js
-    ├────── example.js
+    ├──── scripts               # TS (ES2015) files (Glob: `/*.ts`)
+    ├────── background.ts
+    ├────── example.ts
     ├──── styles                # CSS files (Glob: `/*.(css|less|css)`)
     ├────── popup.css
     ├────── example.less
