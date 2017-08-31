@@ -23,6 +23,7 @@
     ]
   },
   "devDependencies": {
+    "@types/chrome": "^0.x.x",
     "babel-cli": "6.x.x",
     "babel-core": "6.x.x",
     "babel-loader": "7.x.x",
@@ -51,6 +52,8 @@
     "gulp-zip": "^4.x.x",
     "require-dir": "0.x.x",
     "standard": "^10.0.2",
+    "ts-loader": "^2.x.x",
+    "tslint": "^5.x.x",
     "vinyl-named": "1.x.x",
     "webpack": "3.x.x",
     "webpack-stream": "3.x.x",
