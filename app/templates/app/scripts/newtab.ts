@@ -1,4 +1,4 @@
 // Enable chromereload by uncommenting this line:
 // import 'chromereload/devonly'
 
-console.log(`'Allo 'Allo! Bookmarks`)
+console.log(`'Allo 'Allo! New Tab`);
