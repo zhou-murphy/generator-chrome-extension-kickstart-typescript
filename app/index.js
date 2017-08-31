@@ -334,6 +334,17 @@ module.exports = class extends Generator {
     )
   }
 
+  typeScriptConfigs () {
+    this.fs.copy(
+      this.templatePath('tsconfig.json'),
+      this.destinationPath('tsconfig.json')
+    )
+    this.fs.copy(
+      this.templatePath('tslint.json'),
+      this.destinationPath('tslint.json')
+    )
+  }
+
   manifest () {
     var manifest = {}
     var permissions = []
