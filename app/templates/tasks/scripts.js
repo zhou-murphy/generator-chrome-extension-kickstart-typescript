@@ -31,18 +31,18 @@ gulp.task('scripts', (cb) => {
       ] : []),
       module: {
         rules: [
-        {
-          test: /\.ts$/,
-          loader: 'ts-loader',
-          exclude: /node_modules/,
-        }
-      ]
+          {
+            test: /\.ts$/,
+            loader: 'ts-loader',
+            exclude: /node_modules/
+          }
+        ]
       },
       resolve: {
-        extensions: ['.ts','.js'],
+        extensions: ['.ts', '.js'],
         modules: [
-          "node_modules/",
-          "app/scripts/"
+          'node_modules/',
+          'app/scripts/'
         ]
       }
     },
