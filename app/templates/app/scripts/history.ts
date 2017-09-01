@@ -1,4 +1,4 @@
 // Enable chromereload by uncommenting this line:
 // import 'chromereload/devonly'
 
-console.log(`'Allo 'Allo! Devtools Extension`)
+console.log(`'Allo 'Allo! History Extension`);

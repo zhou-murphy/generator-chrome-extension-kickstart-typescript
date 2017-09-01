@@ -6,7 +6,7 @@ const path = require('path')
 const assert = require('yeoman-assert')
 const helpers = require('yeoman-test')
 
-describe('chrome-extension-kickstart:app', () => {
+describe('chrome-extension-kickstart-typescript:app', () => {
   before(() => {
     return helpers.run(path.join(__dirname, '../app'))
       .withOptions({
@@ -57,6 +57,8 @@ describe('chrome-extension-kickstart:app', () => {
     assert.file([
       'package.json',
       '.editorconfig',
+      'tsconfig.json',
+      'tslint.json',
       '.babelrc',
       '.gitattributes',
       '.gitignore',
@@ -115,7 +117,7 @@ describe('chrome-extension-kickstart:app', () => {
   it('creates devtools page', () => {
     assert.file([
       'app/pages/devtools.html',
-      'app/scripts/devtools.js',
+      'app/scripts/devtools.ts',
       'app/styles/devtools.scss'
     ])
     assert.fileContent([
@@ -127,7 +129,7 @@ describe('chrome-extension-kickstart:app', () => {
   it('creates newtab files', () => {
     assert.file([
       'app/pages/newtab.html',
-      'app/scripts/newtab.js',
+      'app/scripts/newtab.ts',
       'app/styles/newtab.scss'
     ])
     assert.fileContent([
@@ -138,7 +140,7 @@ describe('chrome-extension-kickstart:app', () => {
   it('creates all popup files', () => {
     assert.file([
       'app/pages/popup.html',
-      'app/scripts/popup.js',
+      'app/scripts/popup.ts',
       'app/styles/popup.scss'
     ])
     assert.fileContent([
@@ -149,7 +151,7 @@ describe('chrome-extension-kickstart:app', () => {
   it('creates options', () => {
     assert.file([
       'app/pages/options.html',
-      'app/scripts/options.js',
+      'app/scripts/options.ts',
       'app/styles/options.scss'
     ])
     assert.fileContent([
@@ -160,7 +162,7 @@ describe('chrome-extension-kickstart:app', () => {
 
   it('creates contentscripts', () => {
     assert.file([
-      'app/scripts/contentscript.js',
+      'app/scripts/contentscript.ts',
       'app/styles/contentscript.scss'
     ])
     assert.fileContent([
@@ -170,7 +172,7 @@ describe('chrome-extension-kickstart:app', () => {
 
   it('creates a background page', () => {
     assert.file([
-      'app/scripts/background.js'
+      'app/scripts/background.ts'
     ])
     assert.fileContent([
       ['app/manifest.json', /"background":\s\{/]

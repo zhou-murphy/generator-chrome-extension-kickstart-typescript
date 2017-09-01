@@ -334,6 +334,17 @@ module.exports = class extends Generator {
     )
   }
 
+  typeScriptConfigs () {
+    this.fs.copy(
+      this.templatePath('tsconfig.json'),
+      this.destinationPath('tsconfig.json')
+    )
+    this.fs.copy(
+      this.templatePath('tslint.json'),
+      this.destinationPath('tslint.json')
+    )
+  }
+
   manifest () {
     var manifest = {}
     var permissions = []
@@ -455,8 +466,8 @@ module.exports = class extends Generator {
       this.destinationPath('app/pages/popup.html')
     )
     this.fs.copy(
-      this.templatePath('app/scripts/popup.js'),
-      this.destinationPath('app/scripts/popup.js')
+      this.templatePath('app/scripts/popup.ts'),
+      this.destinationPath('app/scripts/popup.ts')
     )
     this.fs.copy(
       this.templatePath('app/styles/popup.scss'),
@@ -473,17 +484,17 @@ module.exports = class extends Generator {
   }
 
   backgroundpage () {
-    let filename = 'background.js'
+    let filename = 'background.ts'
 
     if (this.manifest.action === 2) {
-      filename = 'background.pageaction.js'
+      filename = 'background.pageaction.ts'
     } else if (this.manifest.action === 1) {
-      filename = 'background.browseraction.js'
+      filename = 'background.browseraction.ts'
     }
 
     this.fs.copy(
       this.templatePath(`app/scripts/${filename}`),
-      this.destinationPath('app/scripts/background.js')
+      this.destinationPath('app/scripts/background.ts')
     )
   }
 
@@ -495,8 +506,8 @@ module.exports = class extends Generator {
       this.destinationPath('app/pages/options.html')
     )
     this.fs.copy(
-      this.templatePath('app/scripts/options.js'),
-      this.destinationPath('app/scripts/options.js')
+      this.templatePath('app/scripts/options.ts'),
+      this.destinationPath('app/scripts/options.ts')
     )
     this.fs.copy(
       this.templatePath('app/styles/options.scss'),
@@ -512,8 +523,8 @@ module.exports = class extends Generator {
       this.destinationPath('app/pages/devtools.html')
     )
     this.fs.copy(
-      this.templatePath('app/scripts/devtools.js'),
-      this.destinationPath('app/scripts/devtools.js')
+      this.templatePath('app/scripts/devtools.ts'),
+      this.destinationPath('app/scripts/devtools.ts')
     )
     this.fs.copy(
       this.templatePath('app/styles/devtools.scss'),
@@ -529,8 +540,8 @@ module.exports = class extends Generator {
       this.destinationPath('app/pages/history.html')
     )
     this.fs.copy(
-      this.templatePath('app/scripts/history.js'),
-      this.destinationPath('app/scripts/history.js')
+      this.templatePath('app/scripts/history.ts'),
+      this.destinationPath('app/scripts/history.ts')
     )
     this.fs.copy(
       this.templatePath('app/styles/history.scss'),
@@ -546,8 +557,8 @@ module.exports = class extends Generator {
       this.destinationPath('app/pages/bookmarks.html')
     )
     this.fs.copy(
-      this.templatePath('app/scripts/bookmarks.js'),
-      this.destinationPath('app/scripts/bookmarks.js')
+      this.templatePath('app/scripts/bookmarks.ts'),
+      this.destinationPath('app/scripts/bookmarks.ts')
     )
     this.fs.copy(
       this.templatePath('app/styles/bookmarks.scss'),
@@ -563,8 +574,8 @@ module.exports = class extends Generator {
       this.destinationPath('app/pages/newtab.html')
     )
     this.fs.copy(
-      this.templatePath('app/scripts/newtab.js'),
-      this.destinationPath('app/scripts/newtab.js')
+      this.templatePath('app/scripts/newtab.ts'),
+      this.destinationPath('app/scripts/newtab.ts')
     )
     this.fs.copy(
       this.templatePath('app/styles/newtab.scss'),
@@ -576,8 +587,8 @@ module.exports = class extends Generator {
     if (!this.manifest.contentscript) return
 
     this.fs.copy(
-      this.templatePath('app/scripts/contentscript.js'),
-      this.destinationPath('app/scripts/contentscript.js')
+      this.templatePath('app/scripts/contentscript.ts'),
+      this.destinationPath('app/scripts/contentscript.ts')
     )
     this.fs.copy(
       this.templatePath('app/styles/contentscript.scss'),

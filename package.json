@@ -1,10 +1,10 @@
 {
-  "name": "generator-chrome-extension-kickstart",
+  "name": "generator-chrome-extension-kickstart-typescript",
   "version": "4.4.0",
   "description": "Yeoman generator",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "HaNdTriX/generator-chrome-extension-kickstart",
+  "repository": "mazamachi/generator-chrome-extension-kickstart-typescript",
   "author": {
     "name": "Henrik",
     "email": "handtrix@gmail.com",
