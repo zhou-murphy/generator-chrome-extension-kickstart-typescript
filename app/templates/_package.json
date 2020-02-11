@@ -27,6 +27,7 @@
     "@types/chrome": "^0.x.x",
     "babel-cli": "6.x.x",
     "babel-core": "6.x.x",
+    "babel-eslint": "^10.x.x",
     "babel-loader": "8.x.x",
     "babel-preset-env": "1.x.x",
     "babili-webpack-plugin": "0.x.x",
