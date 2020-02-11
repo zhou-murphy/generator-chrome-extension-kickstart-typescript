@@ -20,7 +20,8 @@
   "standard": {
     "globals": [
       "chrome"
-    ]
+    ],
+    "parser": "babel-eslint"
   },
   "devDependencies": {
     "@types/chrome": "^0.x.x",
@@ -28,16 +29,15 @@
     "babel-core": "6.x.x",
     "babel-loader": "7.x.x",
     "babel-preset-env": "1.x.x",
-    "chai": "4.x.x",
+    "babili-webpack-plugin": "0.x.x",
     "chromereload": "0.x.x",
-    "debounce": "1.x.x",
     "del": "3.x.x",
     "gulp": "3.x.x",
     "gulp-bump": "2.x.x",
     "gulp-cache": "0.x.x",
     "gulp-clean-css": "^3.x.x",
-    "gulp-filter": "^5.x.x",
-    "gulp-git": "^2.x.x",
+    "gulp-filter": "5.x.x",
+    "gulp-git": "2.x.x",
     "gulp-if": "2.x.x",
     "gulp-imagemin": "3.x.x",
     "gulp-json-transform": "0.x.x",
@@ -49,14 +49,14 @@
     "gulp-sourcemaps": "^2.x.x",
     "gulp-tag-version": "1.x.x",
     "gulp-util": "3.x.x",
-    "gulp-zip": "^4.x.x",
+    "gulp-zip": "4.x.x",
     "require-dir": "0.x.x",
-    "standard": "^10.0.2",
+    "standard": "10.x.x",
     "ts-loader": "^2.x.x",
     "tslint": "^5.x.x",
     "vinyl-named": "1.x.x",
     "webpack": "3.x.x",
-    "webpack-stream": "3.x.x",
-    "yargs": "^8.x.x"
+    "webpack-stream": "4.x.x",
+    "yargs": "9.x.x"
   }
 }
