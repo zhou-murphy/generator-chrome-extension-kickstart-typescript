@@ -1,0 +1,19 @@
+.title {
+  font-size: 1.2em;
+}
+.container {
+  div {
+    padding: 5px 0;
+  }
+  input {
+    padding: 10px;
+
+    &[type='text'] {
+      width: 500px;
+    }
+    &[type='button'] {
+      float:right;
+      margin-bottom: 5px;
+    }
+  }
+}

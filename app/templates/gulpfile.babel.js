@@ -1,15 +1,15 @@
-require('./tasks/chromereload')
-require('./tasks/clean')
-require('./tasks/fonts')
-require('./tasks/images')
-require('./tasks/locales')
-require('./tasks/manifest')
-require('./tasks/pages')
-require('./tasks/scripts')
-require('./tasks/styles')
-require('./tasks/version')
+import './tasks/chromereload.js'
+import './tasks/clean.js'
+import './tasks/fonts.js'
+import './tasks/images.js'
+import './tasks/locales.js'
+import './tasks/manifest.js'
+import './tasks/pages.js'
+import './tasks/scripts.js'
+import './tasks/styles.js'
+import './tasks/version.js'
 
-require('./tasks/build')
+import './tasks/build.js'
 
-require('./tasks/default')
-require('./tasks/pack')
+import './tasks/default.js'
+import './tasks/pack.js'

@@ -1,7 +1,7 @@
 import gulp from 'gulp'
 import gutil from 'gulp-util'
 import livereload from 'gulp-livereload'
-import args from './lib/args'
+import args from './lib/args.js'
 
 // In order to make chromereload work you'll need to include
 // the following line in your `scipts/background.ts` file.

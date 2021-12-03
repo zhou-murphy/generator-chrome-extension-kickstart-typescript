@@ -1,8 +1,13 @@
-// Enable chromereload by uncommenting this line:
-// import 'chromereload/devonly'
+chrome.runtime.onMessage.addListener((message: string, sender, sendTResponse) => {
+  var queryOptions = { active: true, currentWindow: true };
+  chrome.tabs.query(queryOptions, function(tabs) {
+    console.log(tabs[0].id, message);
+  });
+  return true;
 
-chrome.runtime.onInstalled.addListener((details) => {
-  console.log('previousVersion', details.previousVersion);
 });
 
-console.log(`'Allo 'Allo! Event Page`);
+
+chrome.tabs.onRemoved.addListener(function(tabid, removeInfo) {
+  console.log(tabid);
+})

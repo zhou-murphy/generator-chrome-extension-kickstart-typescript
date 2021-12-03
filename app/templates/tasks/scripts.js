@@ -7,7 +7,7 @@ import gulpWebpack from 'webpack-stream'
 import BabiliPlugin from 'babili-webpack-plugin'
 import plumber from 'gulp-plumber'
 import livereload from 'gulp-livereload'
-import args from './lib/args'
+import args from './lib/args.js'
 
 const ENV = args.production ? 'production' : 'development'
 

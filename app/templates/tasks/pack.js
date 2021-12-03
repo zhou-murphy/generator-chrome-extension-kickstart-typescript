@@ -2,7 +2,7 @@ import gulp from 'gulp'
 import { colors, log } from 'gulp-util'
 import zip from 'gulp-zip'
 import packageDetails from '../package.json'
-import args from './lib/args'
+import args from './lib/args.js'
 
 function getPackFileType () {
   switch (args.vendor) {
